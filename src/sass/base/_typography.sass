@@ -1,0 +1,92 @@
+body
+    font-family: 'Roboto', sans-serif
+    color: $color-gray
+    font-weight: 400
+    font-size: $font-size-paragraph
+    letter-spacing: .2rem
+.title-first
+    color: $color-white
+    &__main
+        text-transform: uppercase
+        display: block
+        font-size: 5rem
+        font-weight: 800
+        line-height: 6rem
+        letter-spacing: 1rem
+        margin-bottom: 1rem
+        animation-name: lefttoright
+        animation-duration: 1s
+        animation-delay: 1s
+        backface-visibility: hidden
+        @include respont(tab-land)
+            font-size: 3.5rem
+        @include respont(tab-port)
+            font-size: 3.6rem
+            letter-spacing: .5rem
+            margin-bottom: 0
+        @include respont(phone)
+            font-size: 2.9rem
+            padding-left: 2.5rem 
+
+    &__secondary
+        /* этого нет
+        padding-left: 3.5rem 
+        display: block
+        font-size: 4rem
+        font-weight: 100
+        letter-spacing: .5rem
+        animation-name: righttoleft
+        animation-duration: 1s
+        animation-delay: 1s
+        backface-visibility: hidden
+        @include respont(tab-land)
+            font-size: 3rem
+            margin-bottom: 3.5rem
+        @include respont(tab-port)
+            font-size: 2.8rem
+            letter-spacing: .2rem
+        @include respont(phone)
+            font-size: 2.6rem
+            padding-left: 2.5rem 
+.title-second
+    text-align: center
+    font-size: $font-size-paragraph-h2
+    letter-spacing: 1rem
+    text-transform: uppercase
+    font-weight: 800
+    background: linear-gradient(90deg, $color-brown-light 3.65%, $color-brown-black 100%)
+    -webkit-background-clip: text
+    color: transparent
+    transition: all .4s
+    backface-visibility: hidden
+    @include respont(tab-land)
+        font-size: 3rem
+    @include respont(tab-port)
+        letter-spacing: .6rem
+        font-size: 2.5rem
+    @include respont(phone)
+        letter-spacing: .4rem
+        font-size: 2.4rem
+
+    &:hover
+        transform: skewX(15deg) skewY(2deg) scale(1)
+        text-shadow: $shadow-h2
+    &_white
+        color: $color-white
+.title-third
+    font-size: $font-size-paragraph-h3
+    font-weight: 700
+    letter-spacing: 0.2rem
+    text-align: left
+    @include respont(tab-land)
+        font-size: 1.5rem
+    @include respont(tab-port)
+        text-align: center
+.paragraph
+    font-size: $font-size-paragraph
+    font-weight: 400
+    line-height: 2.24rem
+    letter-spacing: 0.2rem
+    text-align: left
+
+
