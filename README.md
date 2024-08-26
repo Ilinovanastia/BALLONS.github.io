@@ -18,10 +18,11 @@
 2. Перейдите в директорию проекта
 3. Установите зависимости
 4. Запустите Gulp для разработки:
-```git clone https://github.com/Ilinovanastia/BALLONS.github.io.git
+```
+git clone https://github.com/Ilinovanastia/BALLONS.github.io.git
 npm install
-Bash   gulp```
-
+Bash   gulp
+```
 ## Контакты
 
 Если у вас есть вопросы или предложения, не стесняйтесь обращаться ко мне по электронной почте: [i.n4sty4@yandex.ru].
