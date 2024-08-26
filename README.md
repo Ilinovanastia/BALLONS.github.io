@@ -21,7 +21,8 @@
 ```
 git clone https://github.com/Ilinovanastia/BALLONS.github.io.git
 npm install
-Bash   gulp
+Bash
+gulp
 ```
 ## Контакты
 
