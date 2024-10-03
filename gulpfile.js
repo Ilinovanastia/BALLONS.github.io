@@ -58,10 +58,15 @@ gulp.task('img', function () {
         .pipe(gulp.dest("dist/img"));
 });
 
+gulp.task('video', function () {
+    return gulp.src("src/video/**/*")
+        .pipe(gulp.dest("dist/video"));
+});
+
 gulp.task('icon', function () {
     return gulp.src("src/icon/**/*")
         .pipe(gulp.dest("dist/icon"));
 });
 
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icon-fon', 'icon','img', 'html'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icon-fon', 'icon','img', 'video', 'html'));
